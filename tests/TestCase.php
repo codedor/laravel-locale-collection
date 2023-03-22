@@ -2,9 +2,9 @@
 
 namespace Codedor\LocaleCollection\Tests;
 
+use Codedor\LocaleCollection\Providers\LocaleCollectionServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Codedor\LocaleCollection\Providers\LocaleCollectionServiceProvider;
 
 class TestCase extends Orchestra
 {
