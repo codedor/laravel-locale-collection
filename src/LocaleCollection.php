@@ -75,5 +75,4 @@ class LocaleCollection extends Collection
     {
         return $this->firstWhere(fn (Locale $locale) => $locale->urlWithLocale() === app('url')->format($url, $localeToFind));
     }
-
 }
