@@ -29,7 +29,7 @@ it('can return a fallback locale when a fallback has been set already', function
 it('can return a fallback locale when cookie is set to an allowed locale', function () {
     app()->instance('request', Request::create(
         '/', 'GET', [], [
-            'locale' => 'nl-BE'
+            'locale' => 'nl-BE',
         ], [], []
     ));
 
@@ -40,7 +40,7 @@ it('can return a fallback locale when cookie is set to an allowed locale', funct
 it('can return a fallback locale when cookie is set with a non existing locale', function () {
     app()->instance('request', Request::create(
         '/', 'GET', [], [
-            'locale' => 'nl-non-existing'
+            'locale' => 'nl-non-existing',
         ], [], []
     ));
 
