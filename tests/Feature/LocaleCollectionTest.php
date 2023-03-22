@@ -3,7 +3,6 @@
 use Codedor\LocaleCollection\Locale;
 use Codedor\LocaleCollection\LocaleCollection;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Cookie;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 beforeEach(function () {
