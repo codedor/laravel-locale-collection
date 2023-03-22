@@ -1,8 +1,6 @@
-# Locale Collection package for Laravel
+# Locale Collection for Laravel
 
-## 
-
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+A package to define locales via a facade for your project.
 
 ## Installation
 
@@ -12,37 +10,15 @@ You can install the package via composer:
 composer require codedor/laravel-locale-collection
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="laravel-locale-collection-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="laravel-locale-collection-config"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="laravel-locale-collection-views"
-```
-
 ## Usage
 
 ```php
-$localeCollection = new Codedor\LocaleCollection();
-echo $localeCollection->echoPhrase('Hello, Codedor!');
+use Codedor\LocaleCollection\Facades\LocaleCollection;
+use Codedor\LocaleCollection\Locale;
+
+LocaleCollection::add(new Locale('nl-BE', 'codedor.be', 'nl'))
+    ->add(new Locale('fr-BE', 'codedor.be', 'fr'))
+    ->add(new Locale('en-GB', 'codedor.com', 'en'));
 ```
 
 ## Documentation
