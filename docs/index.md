@@ -1,4 +1,4 @@
-# :package_description
+# Locale Collection package for Laravel
 
 ## Introduction
 
