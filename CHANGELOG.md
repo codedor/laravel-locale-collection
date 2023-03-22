@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.0.2 - 2023-03-22
+
+### What's Changed
+
+- Bump dependabot/fetch-metadata from 1.3.3 to 1.3.6 by @dependabot in https://github.com/codedor/laravel-locale-collection/pull/1
+- Bump aglipanci/laravel-pint-action from 0.1.0 to 2.2.0 by @dependabot in https://github.com/codedor/laravel-locale-collection/pull/2
+- Updated docs
+
+### New Contributors
+
+- @dependabot made their first contribution in https://github.com/codedor/laravel-locale-collection/pull/1
+
+**Full Changelog**: https://github.com/codedor/laravel-locale-collection/compare/v0.0.1...v0.0.2
+
 ## v0.0.1 - 2023-03-22
 
 - Initial commit
