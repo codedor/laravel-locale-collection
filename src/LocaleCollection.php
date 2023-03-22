@@ -5,7 +5,6 @@ namespace Codedor\LocaleCollection;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Str;
-use Illuminate\Support\Traits\Macroable;
 
 /**
  * @template TKey of array-key
@@ -15,8 +14,6 @@ use Illuminate\Support\Traits\Macroable;
  */
 class LocaleCollection extends Collection
 {
-    use Macroable;
-
     public function getCurrent(): ?Locale
     {
         return $this->firstLocale(app()->currentLocale());
@@ -48,6 +45,11 @@ class LocaleCollection extends Collection
             $locales->first();
     }
 
+    /**
+     * Set the current locale
+     *
+     * @return static<TKey, TValue>
+     */
     public function setCurrent(string $currentLocale, string $url): self
     {
         $localeObject = $this->firstLocaleWithUrl($currentLocale, $url);
@@ -73,4 +75,5 @@ class LocaleCollection extends Collection
     {
         return $this->firstWhere(fn (Locale $locale) => $locale->urlWithLocale() === app('url')->format($url, $localeToFind));
     }
+
 }

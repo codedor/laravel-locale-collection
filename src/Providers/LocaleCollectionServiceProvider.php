@@ -12,12 +12,10 @@ class LocaleCollectionServiceProvider extends PackageServiceProvider
     {
         $package
             ->name('laravel-locale-collection')
-            ->setBasePath(__DIR__ . '/../')
-            ->hasConfigFile()
-            ->hasMigration('create_package_table');
+            ->setBasePath(__DIR__ . '/../');
     }
 
-    public function registeringPackage()
+    public function registeringPackage(): void
     {
         $this->app->singleton(LocaleCollection::class, function () {
             return new LocaleCollection();

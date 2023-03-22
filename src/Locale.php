@@ -8,7 +8,7 @@ class Locale
 {
     public function __construct(
         private string $locale,
-        private ?string $url = null,
+        private mixed $url = null,
         private ?string $urlLocale = null,
         private array $extras = []
     ) {

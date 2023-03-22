@@ -3,7 +3,7 @@
 use Codedor\LocaleCollection\Locale;
 use Codedor\LocaleCollection\LocaleCollection;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Cookie;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 beforeEach(function () {
@@ -27,15 +27,23 @@ it('can return a fallback locale when a fallback has been set already', function
         ->fallback()->toEqual($this->nlBeLocale);
 });
 
-it('can return a fallback locale when cookie is set', function () {
-    cookie('locale', 'nl-BE');
+it('can return a fallback locale when cookie is set to an allowed locale', function () {
+    app()->instance('request', Request::create(
+        '/', 'GET', [], [
+            'locale' => 'nl-BE'
+        ], [], []
+    ));
 
     expect($this->collection)
         ->fallback()->toEqual($this->nlBeLocale);
 });
 
 it('can return a fallback locale when cookie is set with a non existing locale', function () {
-    cookie('locale', 'nl-non-existing');
+    app()->instance('request', Request::create(
+        '/', 'GET', [], [
+            'locale' => 'nl-non-existing'
+        ], [], []
+    ));
 
     expect($this->collection)
         ->fallback()->locale()->not->toEqual('nl-non-existing');
