@@ -2,7 +2,7 @@
 
 ## Introduction
 
-When it comes to handling translated routes, the process can be complex and time-consuming. That's where the Translatable Routes package for Laravel comes in! This package provides a simple and intuitive way to manage translated routes in your Laravel application. With its fluent API and flexible configuration options, it makes it easy to define and generate translated routes, streamlining the localization process and making it faster and easier for developers to handle translated URLs. Whether you're building a multi-lingual web application or simply need to handle translated routes, the Translatable Routes package for Laravel is a must-have tool.
+Instead of adding locales to a config file, it's now possible to do this via a Collection through a facade and a Locale class.
 
 ## Installation
 
