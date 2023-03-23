@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Instead of adding locales to a config file, it's now possible to do this via a Collection through a facade and a Locale class.
+The Locale Collection package manages and manipulates locale data. With this package, you can easily add, remove, and retrieve locales, making it simpler to implement multilingual features on your website or application. By using the LocaleCollection class, you can define and manage a collection of locales, which can then be used to set the language and region preferences for your users. Each locale is associated with a specific domain and language code, allowing for a fine-grained control over how localization is handled in your application.
 
 ## Installation
 
