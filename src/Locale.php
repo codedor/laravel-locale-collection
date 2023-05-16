@@ -3,9 +3,12 @@
 namespace Codedor\LocaleCollection;
 
 use Illuminate\Support\Str;
+use Illuminate\Support\Traits\Macroable;
 
 class Locale
 {
+    use Macroable;
+
     public function __construct(
         private string $locale,
         private mixed $url = null,
