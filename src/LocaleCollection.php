@@ -73,6 +73,8 @@ class LocaleCollection extends Collection
 
     public function firstLocaleWithUrl(string $localeToFind, string $url): ?Locale
     {
-        return $this->firstWhere(fn (Locale $locale) => $locale->urlWithLocale() === app('url')->format($url, $localeToFind));
+        $urlToFind = Str::after(app('url')->format($url, $localeToFind), '//');
+
+        return $this->firstWhere(fn (Locale $locale) => Str::after($locale->urlWithLocale(), '//') === $urlToFind);
     }
 }
