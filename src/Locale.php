@@ -54,7 +54,7 @@ class Locale
         return Str::replace('-', '_', $this->locale);
     }
 
-    public function extras(?string $key = null): mixed
+    public function extras(string $key = null): mixed
     {
         if ($key) {
             return $this->extras[$key] ?? null;
