@@ -54,9 +54,9 @@ class LocaleCollection extends Collection
     {
         $localeObject = $this->firstLocaleWithUrl($currentLocale, $url);
 
-        abort_if(! $localeObject, 404);
-
-        app()->setLocale($localeObject->locale());
+        if ($localeObject) {
+            app()->setLocale($localeObject->locale());
+        }
 
         return $this;
     }
