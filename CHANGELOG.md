@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.0.4 - 2023-10-12
+
+### What's Changed
+
+- Only set the locale if we were able to find one
+
+**Full Changelog**: https://github.com/codedor/laravel-locale-collection/compare/v0.0.3...v0.0.4
+
 ## v0.0.3 - 2023-05-16
 
 ### What's Changed
