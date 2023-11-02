@@ -41,7 +41,7 @@ class LocaleCollection extends Collection
             $locales->firstWhere(fn (Locale $locale) => $locale->browserLocale() === $preferredBrowserLocale) ?:
             $locales->firstWhere(fn (Locale $locale) => Str::startsWith($preferredBrowserLocale, $locale->browserLocaleWithCountry())) ?:
             $locales->firstWhere(fn (Locale $locale) => Str::startsWith($locale->browserLocaleWithCountry(), $preferredBrowserLocale)) ?:
-            (app()->getFallbackLocale() ? $locales->firstLocale(app()->getFallbackLocale()) : null) ?:
+            $locales->firstLocale(app()->getFallbackLocale()) ?:
             $locales->first();
     }
 
@@ -66,8 +66,12 @@ class LocaleCollection extends Collection
         return $this->contains(fn (Locale $locale) => $locale->locale() === $localeToFind);
     }
 
-    public function firstLocale(string $localeToFind): ?Locale
+    public function firstLocale(?string $localeToFind): ?Locale
     {
+        if (! $localeToFind) {
+            return null;
+        }
+
         return $this->firstWhere(fn (Locale $locale) => $locale->locale() === $localeToFind);
     }
 

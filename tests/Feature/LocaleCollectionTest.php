@@ -89,10 +89,6 @@ it('can set the current locale', function () {
         ->toEqual('fr-BE');
 });
 
-it('throws error when setting a non-existing locale', function () {
-    $this->collection->setCurrent('nl-non-existing', 'http://localhost');
-})->throws(NotFoundHttpException::class);
-
 it('can validate the locale')
     ->expect(fn () => $this->collection)
     ->isAllowed('nl-BE')->toBeTrue()

@@ -19,7 +19,7 @@ class Locale
             $this->url = config('app.url');
         }
 
-        if (! $this->urlLocale) {
+        if (is_null($this->urlLocale)) {
             $this->urlLocale = $this->locale;
         }
     }
