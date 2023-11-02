@@ -3,7 +3,6 @@
 use Codedor\LocaleCollection\Locale;
 use Codedor\LocaleCollection\LocaleCollection;
 use Illuminate\Http\Request;
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 beforeEach(function () {
     $this->nlBeLocale = new Locale('nl-BE');
