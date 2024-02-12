@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.0.1 - 2024-02-12
+
+### What's Changed
+
+- Fixed: Fallback locale tried to return null but return value must be \Codedor\LocaleCollection\Locale when no matching url was found, so now all locales will be used when no locales for the given url are found
+
 ## v0.0.4 - 2023-10-12
 
 ### What's Changed

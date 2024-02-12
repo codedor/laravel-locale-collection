@@ -29,6 +29,11 @@ class LocaleCollection extends Collection
         // first get locales for current url
         $locales = $this->where(fn (Locale $locale) => $locale->url() === request()->root());
 
+        // if no locales for the current url are found, get all locales
+        if ($locales->count() === 0) {
+            $locales = $this;
+        }
+
         $preferredBrowserLocale = request()->getPreferredLanguage();
 
         // if we have a matching browser locale with country (e.g. nl-BE)
