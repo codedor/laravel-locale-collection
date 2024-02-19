@@ -55,9 +55,10 @@ class LocaleCollection extends Collection
      *
      * @return static<TKey, TValue>
      */
-    public function setCurrent(string $currentLocale, string $url): self
+    public function setCurrent(?string $currentLocale, string $url): self
     {
-        $localeObject = $this->firstLocaleWithUrl($currentLocale, $url);
+        $localeObject = ($currentLocale ? $this->firstLocaleWithUrl($currentLocale, $url) : null)
+            ?? $this->fallback();
 
         if ($localeObject) {
             app()->setLocale($localeObject->locale());
