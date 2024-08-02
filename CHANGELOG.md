@@ -1,5 +1,18 @@
 # Changelog
 
+## v1.1.0 - 2024-08-02
+
+### What's Changed
+
+* Bump aglipanci/laravel-pint-action from 2.3.1 to 2.4 by @dependabot in https://github.com/codedor/laravel-locale-collection/pull/16
+* Upgrade to L11 by @jyrkidn in https://github.com/codedor/laravel-locale-collection/pull/14
+
+### New Contributors
+
+* @jyrkidn made their first contribution in https://github.com/codedor/laravel-locale-collection/pull/14
+
+**Full Changelog**: https://github.com/codedor/laravel-locale-collection/compare/v1.0.1...v1.1.0
+
 ## v1.0.1 - 2024-02-12
 
 ### What's Changed
