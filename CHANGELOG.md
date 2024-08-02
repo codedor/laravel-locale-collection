@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.0.0 - 2023-12-07
+
+### What's Changed
+
+* Bump ramsey/composer-install from 1 to 2 by @dependabot in https://github.com/codedor/laravel-locale-collection/pull/8
+* Bump actions/checkout from 3 to 4 by @dependabot in https://github.com/codedor/laravel-locale-collection/pull/9
+* Bump stefanzweifel/git-auto-commit-action from 4 to 5 by @dependabot in https://github.com/codedor/laravel-locale-collection/pull/10
+
+**Full Changelog**: https://github.com/codedor/laravel-locale-collection/compare/v0.0.5...v1.0.0
+
 ## v1.1.0 - 2024-08-02
 
 ### What's Changed
