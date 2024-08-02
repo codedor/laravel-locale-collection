@@ -18,7 +18,7 @@ class LocaleCollectionServiceProvider extends PackageServiceProvider
     public function registeringPackage(): void
     {
         $this->app->singleton(LocaleCollection::class, function () {
-            return new LocaleCollection();
+            return new LocaleCollection;
         });
     }
 }
