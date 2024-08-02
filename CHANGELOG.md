@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.5 - 2023-11-02
+
+**Full Changelog**: https://github.com/codedor/laravel-locale-collection/compare/v0.0.4...v0.0.5
+
 ## v1.0.0 - 2023-12-07
 
 ### What's Changed
