@@ -8,9 +8,9 @@ use Illuminate\Support\Str;
 
 /**
  * @template TKey of array-key
- * @template TValue of \Codedor\LocaleCollection\Locale
+ * @template TLocale of Locale
  *
- * @extends \Illuminate\Support\Collection<TKey, TValue>
+ * @extends \Illuminate\Support\Collection<TKey, TLocale>
  */
 class LocaleCollection extends Collection
 {
@@ -53,9 +53,9 @@ class LocaleCollection extends Collection
     /**
      * Set the current locale
      *
-     * @return static<TKey, TValue>
+     * @return $this
      */
-    public function setCurrent(string $currentLocale, string $url): self
+    public function setCurrent(string $currentLocale, string $url): static
     {
         $localeObject = $this->firstLocaleWithUrl($currentLocale, $url);
 
