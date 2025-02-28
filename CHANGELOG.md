@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.2.1 - 2025-02-28
+
+### What's Changed
+
+* Update some LocaleCollection facade annotations
+
+**Full Changelog**: https://github.com/codedor/laravel-locale-collection/compare/v1.2.0...v1.2.1
+
 ## v1.2.0 - 2025-02-28
 
 ### What's Changed
