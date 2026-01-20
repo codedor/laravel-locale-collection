@@ -2,9 +2,9 @@
 
 namespace Wotz\LocaleCollection\Providers;
 
-use Wotz\LocaleCollection\LocaleCollection;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
+use Wotz\LocaleCollection\LocaleCollection;
 
 class LocaleCollectionServiceProvider extends PackageServiceProvider
 {

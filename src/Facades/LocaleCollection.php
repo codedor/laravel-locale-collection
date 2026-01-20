@@ -2,8 +2,8 @@
 
 namespace Wotz\LocaleCollection\Facades;
 
-use Wotz\LocaleCollection\Locale;
 use Illuminate\Support\Facades\Facade;
+use Wotz\LocaleCollection\Locale;
 
 /**
  * @method static \Wotz\LocaleCollection\Locale|null getCurrent()
