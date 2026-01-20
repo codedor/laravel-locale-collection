@@ -1,6 +1,6 @@
 <?php
 
-use Codedor\LocaleCollection\Facades\LocaleCollection;
+use Wotz\LocaleCollection\Facades\LocaleCollection;
 
 it('has a registered facade', function () {
     expect(LocaleCollection::count())

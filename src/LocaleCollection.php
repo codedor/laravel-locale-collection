@@ -1,6 +1,6 @@
 <?php
 
-namespace Codedor\LocaleCollection;
+namespace Wotz\LocaleCollection;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cookie;

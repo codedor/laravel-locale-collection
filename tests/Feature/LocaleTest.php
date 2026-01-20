@@ -1,6 +1,6 @@
 <?php
 
-use Codedor\LocaleCollection\Locale;
+use Wotz\LocaleCollection\Locale;
 
 it('can return a locale')
     ->expect(fn () => new Locale('nl-BE'))
