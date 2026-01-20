@@ -1,5 +1,18 @@
 # Changelog
 
+## v2.0.0 - 2026-01-20
+
+### What's Changed
+
+* Bump dependabot/fetch-metadata from 2.3.0 to 2.4.0 by @dependabot[bot] in https://github.com/codedor/laravel-locale-collection/pull/22
+* Bump aglipanci/laravel-pint-action from 2.5 to 2.6 by @dependabot[bot] in https://github.com/codedor/laravel-locale-collection/pull/24
+* Bump dependabot/fetch-metadata from 2.4.0 to 2.5.0 by @dependabot[bot] in https://github.com/codedor/laravel-locale-collection/pull/28
+* Bump stefanzweifel/git-auto-commit-action from 5 to 7 by @dependabot[bot] in https://github.com/codedor/laravel-locale-collection/pull/26
+* Bump actions/checkout from 4 to 6 by @dependabot[bot] in https://github.com/codedor/laravel-locale-collection/pull/27
+* Update namespace to wotz by @jyrkidn in https://github.com/codedor/laravel-locale-collection/pull/29
+
+**Full Changelog**: https://github.com/codedor/laravel-locale-collection/compare/v1.2.1...v2.0.0
+
 ## v1.2.1 - 2025-02-28
 
 ### What's Changed
