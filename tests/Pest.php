@@ -1,5 +1,5 @@
 <?php
 
-use Codedor\LocaleCollection\Tests\TestCase;
+use Wotz\LocaleCollection\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

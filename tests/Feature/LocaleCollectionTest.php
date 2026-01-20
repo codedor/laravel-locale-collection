@@ -1,8 +1,8 @@
 <?php
 
-use Codedor\LocaleCollection\Locale;
-use Codedor\LocaleCollection\LocaleCollection;
 use Illuminate\Http\Request;
+use Wotz\LocaleCollection\Locale;
+use Wotz\LocaleCollection\LocaleCollection;
 
 beforeEach(function () {
     $this->nlBeLocale = new Locale('nl-BE');

@@ -1,10 +1,10 @@
 <?php
 
-namespace Codedor\LocaleCollection\Providers;
+namespace Wotz\LocaleCollection\Providers;
 
-use Codedor\LocaleCollection\LocaleCollection;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
+use Wotz\LocaleCollection\LocaleCollection;
 
 class LocaleCollectionServiceProvider extends PackageServiceProvider
 {
