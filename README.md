@@ -7,18 +7,18 @@ A package to define locales via a facade for your project.
 You can install the package via composer:
 
 ```bash
-composer require codedor/laravel-locale-collection
+composer require wotz/laravel-locale-collection
 ```
 
 ## Usage
 
 ```php
-use Codedor\LocaleCollection\Facades\LocaleCollection;
-use Codedor\LocaleCollection\Locale;
+use Wotz\LocaleCollection\Facades\LocaleCollection;
+use Wotz\LocaleCollection\Locale;
 
-LocaleCollection::add(new Locale('nl-BE', 'codedor.be', 'nl'))
-    ->add(new Locale('fr-BE', 'codedor.be', 'fr'))
-    ->add(new Locale('en-GB', 'codedor.com', 'en'));
+LocaleCollection::add(new Locale('nl-BE', 'whoownsthezebra.be', 'nl'))
+    ->add(new Locale('fr-BE', 'whoownsthezebra.be', 'fr'))
+    ->add(new Locale('en-GB', 'whoownsthezebra.com', 'en'));
 ```
 
 ## Documentation
@@ -45,7 +45,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Security Vulnerabilities
 
-If you discover any security-related issues, please email info@codedor.be instead of using the issue tracker.
+If you discover any security-related issues, please email info@whoownsthezebra.be instead of using the issue tracker.
 
 ## License
 

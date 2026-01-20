@@ -9,14 +9,14 @@ The Locale Collection package manages and manipulates locale data. With this pac
 First, install this package via the Composer package manager:
 
 ```bash
-composer require codedor/laravel-locale-collection
+composer require wotz/laravel-locale-collection
 ```
 
 In the `AppServiceProvider` (or where you prefer) the Locale can be defined.
 
 ```php
-use \Codedor\LocaleCollection\Facades\LocaleCollection;
-use Codedor\LocaleCollection\Locale;
+use Wotz\LocaleCollection\Facades\LocaleCollection;
+use Wotz\LocaleCollection\Locale;
 
 public function boot()
 {
@@ -32,7 +32,7 @@ See the [Locale class](#locale-class) section for more information.
 ### Signature
 
 ```php
-new \Codedor\LocaleCollection\Locale(string $locale, ?string $url = null, ?string $urlLocale = null, array $extras = [])
+new \Wotz\LocaleCollection\Locale(string $locale, ?string $url = null, ?string $urlLocale = null, array $extras = [])
 ```
 
 1. Where first parameter is the full locale name, can be `nl-BE` or `nl`.
@@ -47,7 +47,7 @@ And since it is a facade, it can be easily extended in your app (if you want to 
 
 ### Get current locale
 
-Via the LocaleCollection facade you can the the current locale: `Codedor\LocaleCollection\Facades\LocaleCollection::getCurrent()`. This returns the current locale or a fallback.
+Via the LocaleCollection facade you can the the current locale: `Wotz\LocaleCollection\Facades\LocaleCollection::getCurrent()`. This returns the current locale or a fallback.
 
 ### Set current locale
 
